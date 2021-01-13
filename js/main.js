@@ -1,6 +1,6 @@
 class hECMAthlon {
 
-    getMaxValue (input) {
+    getMaxValue = (input) => {
         let maxValues = input.split(",");
         let bigger = (a,b)=>{
             if(parseInt(a) > parseInt(b)){
@@ -24,7 +24,7 @@ class hECMAthlon {
         return [maxValue];
     } 
 
-    getGreaterThan (input) {
+    getGreaterThan = (input) => {
         let greaterValues = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].filter( n => n > parseInt(input));
         
         /* 
@@ -38,7 +38,7 @@ class hECMAthlon {
         return greaterValues; 
     }
 
-    fizzBuzz (input) {
+    fizzBuzz =  (input) => {
         let newArray = [...Array(parseInt(input))];
         let output = newArray.map((currentNumber, index) => {
             let k = index+1;
